@@ -1,0 +1,435 @@
+ /* Styles for the search bar */
+ .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    max-width: 400px;
+    margin: 20px auto 0; /* Add margin-top to move it above */
+    padding: 8px;
+    border: 2px solid #007bff;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 20px 20px 10px rgba(11, 11, 11, 0.162);
+ }
+
+ .search-container-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+ .search-icon {
+    margin-right: 8px;
+    color: #007bff;
+ }
+
+.search-input:focus {
+    border: 2px solid #007bff;
+  }
+
+.search-input {
+     flex: 1;
+     border: none;
+     outline: none;
+     font-size: 16px;
+     padding: 8px;
+     background-color: #f1f1f1;
+ }
+
+.search-input::placeholder {
+     color: #bbb;
+ }
+.search-button {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+
+.search-button:hover {
+    background-color: #0056b3;
+ }
+
+
+ body {
+     background: url('https://github.com/Riyal11/image/blob/main/MicrosoftTeams-image-86.png?raw=true');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top;
+     background-attachment: fixed;
+ }
+
+ @media only screen and (max-width: 767px) {
+     #headerTitle {
+         font-size: 52px;
+     }
+ }
+
+ #headerLogoImage {
+     position: fixed;
+     left: 3%;
+     bottom: 10px;
+     width: 200px;
+     max-width: 30%;
+     z-index: 100;
+ }
+
+ /* fontFamilyStyle */
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ h1 div,
+ h2 div,
+ h3 div,
+ h4 div,
+ h5 div,
+ h6 div {
+     font-family: 'Encode Sans Expanded', sans-serif;
+ }
+
+ p,
+ span,
+ label,
+ a,
+ button,
+ strong,
+ div,
+ em {
+     font-family: 'PT Sans', sans-serif;
+ }
+
+ /* First style block */
+ #headerContent {
+     text-align: center;
+     color: rgb(255, 255, 255);
+     margin-top: 0;
+     overflow: hidden;
+     word-break: break-word;
+ }
+
+ .iconMarkup {
+     font-size: 25px;
+     border-bottom: 3px solid rgb(255, 255, 255);
+ }
+
+ #headerIcons {
+     font-size: 68px;
+     margin-left: 20px;
+     margin-right: 20px;
+     color: white;
+ }
+
+ #headerTitleWrap {
+     margin: 45px 0;
+ }
+
+ #headerTitle {
+     font-size: 124px;
+     text-transform: uppercase;
+     font-size: 100px;
+     letter-spacing: 0.2em;
+     text-indent: 0.2em;
+     margin: 10px 0;
+ }
+
+ #headerSubtitle {
+     letter-spacing: 0.1em;
+     text-indent: 0.1em;
+ }
+
+ #headerButtons {
+     margin-top: 40px;
+ }
+
+ .headerButton {
+     color: white;
+     text-decoration: none;
+     cursor: pointer;
+     padding: 6px 42px;
+     border-radius: 3px;
+     font-size: 20px;
+     background-color: rgb(255, 255, 255);
+     border: solid 1px rgb(255, 255, 255);
+     transition: 0.5s;
+     display: inline-block;
+ }
+
+ .headerButton:hover {
+     background-color: rgba(56, 56, 56, 0.6);
+     color: white;
+     text-decoration: none;
+ }
+
+ header .customTitle {
+     font-size: 28px;
+     display: block;
+ }
+
+ header .customParagraph {
+     font-size: 20px;
+     display: block;
+ }
+
+ header .customLink,
+ header .customLink a {
+     color: white;
+     font-size: 20px;
+     display: block;
+     width: 100%;
+ }
+
+ header .customLink:hover {
+     opacity: 0.5;
+     text-decoration: none;
+ }
+
+ header .customIcon {
+     font-size: 36px;
+ }
+
+ header .customTitle,
+ header .customParagraph,
+ header .customLink,
+ header .customIcon,
+ header .customButton,
+ header .customImage,
+ header .customEmbed {
+     margin: 10px 0;
+ }
+
+ header #iconDiv .customTitle,
+ header #iconDiv .customParagraph,
+ header #iconDiv .customLink,
+ header #iconDiv .customIcon,
+ header #iconDiv .customButton,
+ header #iconDiv .customImage,
+ header #iconDiv .customEmbed {
+     margin: 30px 0 0;
+ }
+
+ header #headerTitleWrap .customTitle,
+ header #headerTitleWrap .customParagraph,
+ header #headerTitleWrap .customLink,
+ header #headerTitleWrap .customIcon,
+ header #headerTitleWrap .customButton,
+ header #headerTitleWrap .customImage,
+ header #headerTitleWrap .customEmbed,
+ header #headerSubtitleWrap .customTitle,
+ header #headerSubtitleWrap .customParagraph,
+ header #headerSubtitleWrap .customLink,
+ header #headerSubtitleWrap .customIcon,
+ header #headerSubtitleWrap .customButton,
+ header #headerSubtitleWrap .customImage,
+ header #headerSubtitleWrap .customEmbed {
+     margin: 0;
+ }
+
+ header #headerButtons .customTitle,
+ header #headerButtons .customParagraph,
+ header #headerButtons .customLink,
+ header #headerButtons .customIcon,
+ header #headerButtons .customButton,
+ header #headerButtons .customImage,
+ header #headerButtons .customEmbed {
+     margin: 20px 0 0;
+ }
+
+ @media only screen and (max-width: 767px) {
+     #headerTitle {
+         font-size: 50px;
+         letter-spacing: 6px;
+     }
+
+     .iconMarkup {
+         font-size: 16px;
+     }
+
+     #headerIcons {
+         font-size: 52px;
+     }
+
+     .headerButton {
+         font-size: 16px;
+     }
+
+     header .customTitle {
+         font-size: 24px;
+     }
+
+     header .customParagraph {
+         font-size: 18px;
+     }
+
+     header .customLink a {
+         font-size: 18px;
+     }
+ }
+
+ /* Second style block */
+ header {
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top;
+     background-attachment: fixed;
+     text-align: center;
+ }
+
+ @media only screen and (max-width: 767px) {
+     #headerTitle {
+         font-size: 52px;
+     }
+ }
+
+ #headerLogoImage {
+     position: fixed;
+     left: 3%;
+     bottom: 10px;
+     width: 200px;
+     max-width: 30%;
+     z-index: 100;
+ }
+
+ /* Third style block */
+ #about {
+     color: black;
+ }
+
+ #about .aboutImageBg {
+     color: beige;
+ }
+
+ #aboutBox {
+     margin-left: 100px;
+     margin-right: 100px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     background-color: beige;
+ }
+
+ #aboutImage1 {
+     text-align: right;
+     flex: 1;
+     max-width: 50%;
+     border-radius: 50%;
+ }
+
+ .aboutImages {
+     width: 100%;
+ }
+
+ #about .aboutImageBg .aboutImages {
+     border: 2px solid white;
+ }
+
+ #aboutInfo {
+     flex: 1;
+     padding: 50px;
+ }
+
+ #aboutTitle {
+     font-size: 42px;
+ }
+
+ .aboutParagraph {
+     line-height: 1.6;
+     margin: 36px 0;
+     font-size: 16px;
+ }
+
+ #about .customTitle {
+     font-size: 30px;
+     display: block;
+ }
+
+ #about .customParagraph {
+     font-size: 16px;
+     line-height: 1.6;
+     display: block;
+ }
+
+ #about .customLink {
+     color: black;
+     font-size: 16px;
+     display: block;
+     width: 100%;
+ }
+
+ #about .aboutImageBg .customLink {
+     color: white;
+ }
+
+ #about .customLink:hover {
+     opacity: 0.5;
+     text-decoration: none;
+ }
+
+ #about .customIcon {
+     font-size: 30px;
+ }
+
+ #about .customTitle,
+ #about .customParagraph,
+ #about .customLink,
+ #about .customIcon,
+ #about .customButton,
+ #about .customImage,
+ #about .customEmbed {
+     margin: 0;
+ }
+
+ @media only screen and (max-width : 1050px) {
+
+     #aboutInfo {
+         padding: 0;
+     }
+ }
+
+ @media only screen and (max-width : 767px) {
+
+     #aboutBox {
+         margin: 0px;
+         display: initial;
+         flex-direction: column;
+     }
+
+     #aboutImage1 {
+         text-align: left;
+         max-width: 100%;
+         margin-bottom: 20px;
+     }
+
+     .aboutImages {
+         padding-top: 15px;
+     }
+
+     #aboutInfo {
+         padding: 0 15px;
+     }
+
+     .aboutParagraph {
+         line-height: 1.4;
+     }
+
+     #about .customParagraph {
+         line-height: 1.4;
+     }
+
+     #about #aboutImage1 .customEmbed {
+         text-align: center;
+     }
+ }
+
+ #aboutContainer {
+     background: rgb(255, 255, 255);
+ }
